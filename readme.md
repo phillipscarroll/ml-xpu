@@ -1,12 +1,28 @@
 # Setting Up ARC GPUs with Full Mixed Precision in PyTorch on WSL2 (Windows)
 
-## Step 1: Install WSL2
+## Step 1: Install Visual Studio 2022 Community
+1. <a href="https://visualstudio.microsoft.com/downloads/">https://visualstudio.microsoft.com/downloads/</a>
+2. Within Visual Studio 2022 you want to install the 
+   - **Desktop developement with C++** workload. 
+   - **Linux and embedded development with C++** workload. 
+
+## Step 2: Install the oneAPI Base Toolkit
+1. <a href="https://www.intel.com/content/www/us/en/developer/tools/oneapi/base-toolkit-download.html">https://www.intel.com/content/www/us/en/developer/tools/oneapi/base-toolkit-download.html</a>
+   - Package **Intel oneAPI Base Toolkit**
+   - Operating System **Windows**
+   - Installer Type **Offline Installer**
+2. Just click next through the install, defaults are fine.
+3. Once completed you will need to run 2 batch files
+  - ```C:\Program Files (x86)\Intel\oneAPI\setvars.bat```
+  - ```C:\Program Files (x86)\Intel\oneAPI\2025.0\oneapi-vars.bat```
+
+## Step 3: Install WSL2
 1. Open PowerShell as Administrator.
    ```bash
    wsl --install
    ```
 
-## Step 2: Bridge WSL2 to the Network Interface Controller (NIC) for Native Access
+## Step 4: Bridge WSL2 to the Network Interface Controller (NIC) for Native Access
 1. Open "Windows Features" and enable **Hyper-V**.
 2. Click **OK** and reboot your machine.
 3. After rebooting, open **Hyper-V Manager** and set up a virtual switch:
@@ -26,7 +42,7 @@
      vmSwitch=wsl-nic
      ```
 
-## Step 3: Install Ubuntu 22.04 on WSL2
+## Step 5: Install Ubuntu 22.04 on WSL2
 1. Open PowerShell after the reboot and run:
    ```bash
    wsl --install --d Ubuntu-22.04
@@ -38,7 +54,7 @@
      ```
    - Restarting with a clean instance is often faster than troubleshooting issues.
 
-## Step 4: Install Intel AI Tools
+## Step 6: Install Intel AI Tools
 1. Download the Intel AI tools installer and run it:
    ```bash
    wget https://registrationcenter-download.intel.com/akdlm/IRC_NAS/491d5c2a-67fe-48d0-884f-6aecd88f5d8a/ai-tools-2025.0.0.75_offline.sh
@@ -50,7 +66,7 @@
      source $HOME/intel/oneapi/intelpython/bin/activate
      ```
 
-## Step 5: Configure Intel GPU Drivers
+## Step 7: Configure Intel GPU Drivers
 1. Install the Intel graphics GPG public key:
    ```bash
    wget -qO - https://repositories.intel.com/gpu/intel-graphics.key | sudo gpg --yes --dearmor --output /usr/share/keyrings/intel-graphics.gpg
@@ -77,7 +93,7 @@
    ```
    - You should see one or more Intel GPU instances listed.
 
-## Step 6: Set Up JupyterLab with PyTorch
+## Step 8: Set Up JupyterLab with PyTorch
 1. Create a directory for JupyterLab:
    ```bash
    mkdir ~/jupyterlabxpu
@@ -112,7 +128,7 @@
      ```
      - Replace `<WSL2_IP_ADDRESS>` with your WSL2 instance’s IP (e.g., `10.0.0.21`).
 
-## Step 7: Restart the WSL Instance (if needed)
+## Step 9: Restart the WSL Instance (if needed)
 1. Shut down and restart your WSL instance:
    ```bash
    wsl --shutdown Ubuntu-22.04
