@@ -12,5 +12,5 @@ I am very impressed so far with the Battlemage mixed precision performance. In m
 
 I am far from an expert or engineer, but I do enjoy learning every day.
 
-## Native Windows Intel ARC XPU Torch With Mixed Precision
-* <a href="win11_native_pytorch.md">Click Here</a>
+## Links to instructions
+* <a href="Native-Windows-Intel-ARC-XPU-Torch-With Mixed-Precision.md">Native Windows Intel ARC XPU Torch With Mixed Precision</a>
