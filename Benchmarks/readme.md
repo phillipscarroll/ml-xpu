@@ -12,5 +12,5 @@ All benchmarks have been tested with the following:
 - Conda Environment
   - Python 3.12
   - Use the following to setup the environment
-    - Native-Windows-Intel-ARC-XPU-Torch-With Mixed-Precision.md
+    - <a href="https://github.com/phillipscarroll/mlXPU/blob/main/Native-Windows-Intel-ARC-XPU-Torch-With%20Mixed-Precision.md">Native-Windows-Intel-ARC-XPU-Torch-With Mixed-Precision.md</a>
 
