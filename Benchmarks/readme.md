@@ -4,12 +4,15 @@
 
 All benchmarks have been tested with the following:
 
-- XPU Discreet GPUs
-  - ARC Alchemist
-  - ARC Battelmage
+- XPU Discreet GPU
+  - ARC Battlemage B580 12GB
+    - On current drivers I am having issues running these in dual setup. I will only run the B580 for now since its shiny and new.
+- CPU and RAM
+  - 14900K Locked at 5.4ghz/4.1ghz 230w
+  - 6800Mhz DDR5
 - OS
   - Windows 11
-- Conda Environment
+- Environment
   - Python 3.12
   - Use the following to setup the environment
     - <a href="https://github.com/phillipscarroll/mlXPU/blob/main/Native-Windows-Intel-ARC-XPU-Torch-With%20Mixed-Precision.md">Native-Windows-Intel-ARC-XPU-Torch-With Mixed-Precision.md</a>
