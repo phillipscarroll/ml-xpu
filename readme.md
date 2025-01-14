@@ -14,3 +14,4 @@ I am far from an expert or engineer, but I do enjoy learning every day.
 
 ## Links to instructions
 * <a href="Native-Windows-Intel-ARC-XPU-Torch-With Mixed-Precision.md">Native Windows Intel ARC XPU Torch With Mixed Precision</a>
+* <a href="Examples/readme.md">Example code with XPU, Mixed Precision, Etc...</a>
