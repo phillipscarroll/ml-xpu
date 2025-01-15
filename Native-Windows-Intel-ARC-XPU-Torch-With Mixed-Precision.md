@@ -43,7 +43,7 @@ conda activate xpu
 ## Step 6: Install the required torch packages via pip
 1. Run the following command to install the intel torch packages
 ```
-pip3 install --pre torch torchvision torchaudio torchdata safetensors matplotlib pillow numpy --index-url https://download.pytorch.org/whl/nightly/xpu
+pip3 install --pre torch torchvision torchaudio torchdata safetensors matplotlib pillow numpy pandas --index-url https://download.pytorch.org/whl/nightly/xpu
 ```
 2. Run the follwoing command to install other important packages
 ```
