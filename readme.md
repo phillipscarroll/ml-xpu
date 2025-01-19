@@ -10,6 +10,8 @@ I am currently testing with:
 
 I am very impressed so far with the Battlemage mixed precision performance. In my benchmarks I am seeing a single B580's performance around an RTX 2080 Ti or Nvidia L4 in Google Colab training a BERT model.
 
+If you are running an ARC GPU in tandem with your iGPU you may run into issues until you disable the iGPU or happen to be running on a MB without iGPU support.
+
 I am far from an expert or engineer, but I do enjoy learning every day.
 
 ## Links to instructions
