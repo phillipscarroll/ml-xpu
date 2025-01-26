@@ -35,4 +35,4 @@ Due to ARC drivers not being recognized I have been denied my #1 benchmark...muc
 
 ## Links to instructions
 * <a href="native_win11_intel_arc_xpu_pytorch-amp.md">Native Windows Intel ARC XPU Torch With Mixed Precision</a>
-* <a href="examples/readme.md">Example code with XPU, Mixed Precision, Etc...</a>
+* <a href="examples/">Example code with XPU, Mixed Precision, Etc...</a>
