@@ -14,25 +14,25 @@ If you are running an ARC GPU in tandem with your iGPU you may run into issues u
 
 I am far from an expert or engineer, but I do enjoy learning every day.
 
-**Note:** If you want an easy 400mhz overclock on an ARC B580 without crashes (so far) dont adjust the frequency. 
+**Note:** If you want an easy 400mhz overclock on an ARC B580 without crashes (so far) dont adjust the frequency. Just raising voltage and power will move you up the default frequency curve.
 
 - Set your power level to 120% or more
 - Set your voltage limit to +60%
   - This will allow the gpu to clock up to 3200mhz using the stock voltage/freq curve
 - Set a more aggressive fan curve to handle the small increase in heat
-- Wattage will go from 105-120w under load to 140-150w
-  - The minimal cooler for a B580 is designed for a peak of 220w
+- Wattage will increase about 30 watts at peak
+  - The minimal cooler for a B580 is designed for a peak of 220w, we are safe-ish
   - Voltage will increase about 0.050-0.075v
 
 My settings:
 
-![ARC B580 Easy 3200mhz Overclock](arcb580oc.jpg)
+![ARC B580 Easy 3200mhz Overclock](arc_b580_oc.jpg)
 
-Due to ARC drivers not being recognized I have been denied my world record benchmark...much sadness
+Due to ARC drivers not being recognized I have been denied my #1 benchmark...much sadness. It would have only been #1 for a few hours though.
 
-![1-24-2025 B580 World Record Steel Nomad](icouldabeensomebody.jpg)
+![1-24-2025 B580 World Record Steel Nomad](3dmark.jpg)
 
 
 ## Links to instructions
-* <a href="Native-Windows-Intel-ARC-XPU-Torch-With Mixed-Precision.md">Native Windows Intel ARC XPU Torch With Mixed Precision</a>
-* <a href="Examples/readme.md">Example code with XPU, Mixed Precision, Etc...</a>
+* <a href="native_win11_intel_arc_xpu_pytorch-amp.md">Native Windows Intel ARC XPU Torch With Mixed Precision</a>
+* <a href="examples/readme.md">Example code with XPU, Mixed Precision, Etc...</a>
