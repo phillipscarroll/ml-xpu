@@ -48,4 +48,4 @@ Google's open source Gemma 2: <a href="https://huggingface.co/google/gemma-2-2b-
 
 # Refinement
 
-We will 
+We will leverage all the ARC, PyTorch XPU, Tensforflow XPU, oneAPI etc... Intel specific documentation, slides, instructions we can find. A lot of this is in most of the LLMs but its out of date and in most cases not very usable. We will store all this data in the `raw-materials` folder to prepare for conversion for our Dataset.
