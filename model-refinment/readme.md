@@ -1,6 +1,6 @@
 # Refine an LLM
 
-Pre-Planning
+# Pre-Planning
 
 - Choose a small open source LLM as the base
 - Choose domain specific data to refine (train) the model with
@@ -11,7 +11,7 @@ Pre-Planning
 - The first trainings until we get positive results I will perform on my dual 3090 Ti system for sake of iteration/speed
   - Ideally we should be able to easily scale the training up and down for various GPUs
 
-Requirements
+# Requirements
 
 - Small base model <= 3B params
 - Dataset should come from official documentation, github etc...
@@ -39,7 +39,13 @@ Requirements
     - 8-bit Quant QLoRA: 8-9GB
     - 4-bit Quant QLoRA: 5-6GB
     - These estimates are with a small model
+  - ARC B580's can handle
+    - INT2, INT4, INT8, FP16, BF16, TF32 on tensors (Xe Matrix Extension Compatible)
 
-Model
+# Model
 
+Google's open source Gemma 2: <a href="https://huggingface.co/google/gemma-2-2b-it">google/gemma-2-2b-it</a>
 
+# Refinement
+
+We will 
