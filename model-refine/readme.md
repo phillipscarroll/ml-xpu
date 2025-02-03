@@ -1,5 +1,7 @@
 # Refine an LLM
 
+I have no idea what I am doing so lets refine an open source model with domain specific knowledge. The goal here is build some real skill that can apply to things outside of consumer end AI fun projects.
+
 # Pre-Planning
 
 - Choose a small open source LLM as the base
